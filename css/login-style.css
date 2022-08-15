@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  background-image: url('../assets/img/background-day-japan.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff50;
+  padding: 2% 2%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px 0px #000000;
+}
+
+.container > h1 {
+  text-align: center;
+  margin-top: -5px;
+}
+
+.text-field {
+  box-sizing: border-box;
+  position: relative;
+  height: auto;
+}
+
+.text-field > input {
+  width: 100%;
+  min-width: 180px;
+  padding-top: 10%;
+  padding-bottom: 2%;
+  display: inline-block;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid;
+  background-color: transparent;
+}
+
+.text-field > input:focus {
+  transition: all 0.3s ease-out;
+  padding-top: 10%;
+  padding-bottom: 2%;
+}
+
+.text-field > label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 15px;
+  transition: all 0.3s ease-out;
+  font-size: 13pt;
+}
+
+.text-field > input:focus + label {
+  font-size: 10pt;
+  padding-top: 0px;
+  margin-bottom: 25%;
+}
+
+.class-button > button[type='submit'] {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 15% 0;
+  border-radius: 5px;
+  padding: 2% 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 11pt;
+  text-align: center;
+  border: 1px solid #000000;
+  color: antiquewhite;
+  background-color: #19501d;
+}
+
+.class-button > button[type='submit']:hover {
+  background-color: #00ff1170;
+  border: 1px solid black;
+  font-weight: 500;
+  transition: all ease-out 0.4s;
+  color: #000000;
+  cursor: pointer;
+}
+
+.register > p {
+  text-align: center;
+  font-size: 11pt;
+  color: #000000;
+  margin-top: 15%;
+}
+
+.register > p > a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.register > p > a:hover {
+  width: 100%;
+  cursor: pointer;
+  color: #19501d;
+  transition: all ease-out 0.4s;
+}
+
+@media only screen and (max-width: 7680px) {
+  .container {
+    min-height: 260px;
+    min-width: 210px;
+  }
+}
