@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/register.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/logo-codepen.svg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/05504170b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="register.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+  </head>
+  <body class="body-register">
+    <div class="main">
+      <div class="container-register">
+        <h1 class="h1-register">Cadastre-se</h1>
+        <form
+          action="login.js"
+          method="post"
+          class="form-register"
+          target="_blank"
+        >
+          <div class="text-field-register">
+            <input type="email" name="email" id="user-email" required />
+            <label for="name">E-mail</label>
+          </div>
+          <div class="text-field-register">
+            <input type="text" name="user" id="user" required />
+            <label for="name">Usuário</label>
+          </div>
+          <div class="text-field-register">
+            <input type="password" name="senha" id="password-input" required />
+            <label for="senha">Senha</label>
+            <i id="see-password" class="fa-solid fa-eye"></i>
+            <!-- Botão para ver a senha-->
+          </div>
+          <div class="text-field-register">
+            <input
+              type="password"
+              name="senha"
+              id="confirm-password-input"
+              required
+            />
+            <label for="senha">Repetir Senha</label>
+            <i id="see-confirm-password" class="fa-solid fa-eye"></i>
+            <!-- Botão para ver a confirmação da senha-->
+          </div>
+          <div class="class-button-register">
+            <button type="submit">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

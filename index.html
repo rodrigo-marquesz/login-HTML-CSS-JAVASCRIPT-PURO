@@ -2,6 +2,7 @@
 <html lang="pt-BR">
   <head>
     <link rel="stylesheet" href="./css/login-style.css" />
+    <script src="https://kit.fontawesome.com/05504170b3.js" crossorigin="anonymous"></script>
     <script src="login.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +22,7 @@
             type="text"
             name="name"
             id="user-input"
+            required
           />
           <label for="name">Usuário</label>
         </div>
@@ -29,17 +31,18 @@
             type="password"
             name="senha"
             id="password-input"
+            required
           />
           <label for="senha">Senha</label>
         </div>
         <div class="class-button">
-          <button type="submit">Entrar</button>
+          <button type="submit" id="entrar" onclick="exibeMensagem()">Entrar</button>
         </div>
         <div class="line">
           <hr />
         </div>
         <div class="register">
-          <p>Não possui uma conta? <a href="">Cadastre-se</a></p>
+          <p>Não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
         </div>
       </div>
     </div>

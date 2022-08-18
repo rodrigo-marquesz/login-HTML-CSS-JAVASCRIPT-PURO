@@ -7,8 +7,8 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-body {
-  background-image: url('../assets/img/background-day-japan.jpeg');
+.body-register {
+  background-image: url('../assets/img/warrior-looking-at-the-sunset.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,25 +22,27 @@ body {
   height: 100vh;
 }
 
-.container {
-  background-color: #ffffff50;
+.container-register {
+  background-color: #00000090;
   padding: 2% 2%;
   border-radius: 15px;
   box-shadow: 1px 1px 4px 0px #000000;
 }
 
-.container > h1 {
+.h1-register {
   text-align: center;
   margin-top: -5px;
+  color: #9C8E89;
 }
 
-.text-field {
+.text-field-register {
   box-sizing: border-box;
   position: relative;
   height: auto;
+  color: #918585;
 }
 
-.text-field > input {
+.text-field-register > input {
   width: 100%;
   min-width: 180px;
   padding-top: 10%;
@@ -50,15 +52,16 @@ body {
   border: none;
   border-bottom: 2px solid;
   background-color: transparent;
+  color: #c0c0c0;
 }
 
-.text-field > input:focus {
+.text-field-register > input:focus {
   transition: all 0.3s ease-out;
   padding-top: 10%;
   padding-bottom: 2%;
 }
 
-.text-field > label {
+.text-field-register > label {
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -68,14 +71,22 @@ body {
   font-size: 13pt;
 }
 
-.text-field > input:focus + label,
-.text-field > input:valid + label {
+.text-field-register > input:focus + label,
+.text-field-register > input:valid + label {
   font-size: 10pt;
   padding-top: 0px;
   margin-bottom: 25%;
 }
 
-.class-button > button[type='submit'] {
+.fa-eye{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 16px;
+  cursor: pointer;
+}
+
+.class-button-register > button[type='submit'] {
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -87,36 +98,17 @@ body {
   font-size: 11pt;
   text-align: center;
   border: 1px solid #000000;
-  color: antiquewhite;
-  background-color: #19501d;
+  color: #fff;
+  background-color: #d1181870;
 }
 
-.class-button > button[type='submit']:hover {
-  background-color: #00ff1170;
+.class-button-register > button[type='submit']:hover {
+  background-color: #00860970;
   border: 1px solid black;
   font-weight: 500;
   transition: all ease-out 0.4s;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
-}
-
-.register > p {
-  text-align: center;
-  font-size: 11pt;
-  color: #000000;
-  margin-top: 15%;
-}
-
-.register > p > a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.register > p > a:hover {
-  width: 100%;
-  cursor: pointer;
-  color: #19501d;
-  transition: all ease-out 0.4s;
 }
 
 @media only screen and (max-width: 7680px) {
